@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock %}
+
+{% block content %}
+    <div class="wrap">
+        <div class="entry">
+            <div class="title">
+                {{ post.title }}
+            </div>
+            <div class='quota'>
+            </div>
+            <div class="content">
+                <div class="split"></div>
+                {{ post.content }}
+                <div class="user_cover">
+                    <img src='{{site.avatar}}?s=48'>
+                </div>
+
+                <div class="tags">
+                {% for tag in post.tags %}
+                    <a href="/tags/{{ tag }}">{{ tag }}</a>
+                {% endfor %}
+                </div>
+
+                <div class='created'>
+                    {{post.date | date("%Y-%m-%d %H:%M")}}
+                </div>
+
+            </div>
+        </div>
+        <div style="display:none">
+        {% include 'include/comments.html'%}
+        </div>
+    </div>
+{% endblock %}

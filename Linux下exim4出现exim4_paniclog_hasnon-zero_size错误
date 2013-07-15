@@ -1,0 +1,18 @@
+Tags: Linux exim4 Mail
+
+重启exim4：
+
+    /etc/init.d/exim4 restart
+
+可能会遇到exim4抛出ALERT的错误的情况:
+
+    exim paniclog /var/log/exim4/paniclog has non-zero size, mail system possibly broken
+
+解决方法如下：
+
+    1、/etc/init.d/exim4 stop   #停止exim4
+
+    2、rm /var/log/exim4/paniclog   #删除paniclog文件
+
+    3、/etc/init.d/exim4 start  #启动exim4
+

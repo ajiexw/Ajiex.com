@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel='alternate' type='application/rss+xml' title='atom 1.0' href='/feed' />
+    <title>{% block title %} {{site.title}} {% endblock %}</title>
+	<link href="http://resource.farbox.com/css/basic.css?version={{resource_version}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/t/css/layout.css?v=detail-devil">
+    <link rel="favicon icon" type="image/png" href="/img/tt.png" />
+</head>
+<body class="container">
+    <div class="site">
+        <ul class="nav">
+            <li><a href="/archive?use=tags">标签</a></li>
+            <li><a href="/archive">存档</a></li>
+        </ul>
+        <h1><a href="/">{{ site.title or 'THIS IS MY SITE'}}</a></h1>
+    </div>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+{% include 'include/footer.html' %}
+
+</body>
+</html>
+
+
