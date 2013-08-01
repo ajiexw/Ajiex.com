@@ -29,6 +29,10 @@ ul{
     margin:0px;
 }
 
+.date {
+    margin-right:20px;
+}
+
 .tags{
     float:left;
 }
