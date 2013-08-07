@@ -27,6 +27,8 @@ Tags: Linux Vim
 
 选中当前行 - V
 
+按块选择 = ctrl+v
+
 打开文件，从当前的窗口纵向划分出新的窗口 - :sp filename
 
 打开文件，从当前的窗口横向划分出新的窗口 - :vs filename
