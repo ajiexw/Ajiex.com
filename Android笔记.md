@@ -30,6 +30,8 @@ Android全景图：
 
     每个java程序都运行在Dalvik虚拟机之上，一个应用，一个虚拟机实例，一个进程。
 
+    Dalvik基于寄存器，java虚拟机基于堆栈。
+
 ---Applicaton Framework应用程序框架，提供了手机开发中一些最基本的api，手机开发主要基于此开发。如View,Activity.－－应用框架层。包括：
     
     丰富而又可扩展的视图view，包括列表，网格，文本框，按钮以及可嵌入的web浏览器等；

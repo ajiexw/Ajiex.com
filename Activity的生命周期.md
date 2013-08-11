@@ -1,0 +1,17 @@
+Date:2013-08-11 
+Tags: Android
+
+1.Activity在onStart方法调用后，就处于可见状态了（visible）
+
+2.当经过onPause方法后处于暂停状态（Paused），这时Activity处于半透明状态，为不可操作的，比如弹出一个模态框。这时Activity不会执行任何代码
+
+3.Activity在调用onStop方法后即处于用户不可见的状态了（invisible）
+
+4.onCreate方法在整个生命周期只会被调用一次
+
+5.自定义Activity继承Activity类后有没有需要必须实现的方法？答案是没有，但是要想启动和显示一个Activity，就必须实现onCreate方法并指定布局文件
+
+6.大部分的清理操作应该在onPause和onStop中执行，如果在onCreate中开启了耗时线程或耗资源的线程操纵，应该在onDestroy中杀死线程
+
+7.系统一般都是在执行完onPause和onStop方法后再执行onDestroy方法，但是当在onCreate方法中调用了Activity的finish()方法后，比如在onCreate方法里启动新的Activity并调用了finish方法，这时系统会直接调用onDestroy方法！
+

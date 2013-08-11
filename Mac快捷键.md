@@ -34,3 +34,5 @@ Tags: Mac
 
 brew默认存储目录：
 	/Library/Caches/HomeBrew
+
+在finder中，在文件上按cmd+c ，到终端下cmd+v，可以把此文件的绝对路径贴到终端。
