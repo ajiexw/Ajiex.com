@@ -1,19 +1,23 @@
 {% extends 'base.html' %}
 
 {% set total_posts = get_posts(limit=300, sort='asc') %}
-{% if request.args.use == 'tags' %}
-    {% set entries = group(total_posts, 'tags') %}
-{% else %}
-    {% set entries = group(total_posts, 'date:year', reverse=True) %}
-{% endif %}
+{% set entries = group(total_posts, 'tags') %}
 
 {% block content %}
 
 
     <div class="wrap">
+
+
+        <div class="tags_nav">
+        {% for year, posts in entries %}
+        <a class="" href="#{{ year }}">{{ year }}</a>
+        {% endfor %}
+        </div>
+
         <ul class="archive">
         {% for year, posts in entries %}
-            <li class="listing_title hidden">{{ year }}</li>
+        <li class="listing_title" id="{{ year }}">{{ year }}</li>
             <ul class='listing'>
             {% for post in posts %}
                 <li class="listing-item">
@@ -23,9 +27,9 @@
             {% endfor %}
             </ul>
         {% endfor %}
-
+        <!--
         {% include 'include/paginator.html' %}
-
+        -->
         </ul>
     </div>
 

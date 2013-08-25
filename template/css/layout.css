@@ -3,12 +3,17 @@
 ul{
     margin:0px;
     padding:5px 0px 5px 38px; 
+    list-style:none;
+}
+
+ul li {
+    line-height:20px;
 }
 
 
 .container{ 
     position:relative;
-    width:800px;
+    /*width:800px;*/
     margin:0 auto;
 }
 
@@ -16,17 +21,32 @@ ul{
 .wrap{
     position:relative;
     padding:16px;
-    background:url(image/gray.png);
+    /*background:url(image/gray.png);*/
 }
 
+.tags_nav {
+    padding: 30px;
+    background: #FFF;
+    padding-bottom: 0px;
+}
+
+.tags_nav a {
+    display: inline-block;
+    margin: 0px 3px 5px 0px;
+    border: 1px solid #CCC;
+    padding: 0px 8px;
+    border-radius: 5px;
+    line-height:18px;
+}
 
 .archive{
     position:relative;
     padding:30px;
     list-style:none;
     background: #fff;
-    font-size:15px;
+    font-size:12px;
     margin:0px;
+    padding-top:15px;
 }
 
 .date {
@@ -108,11 +128,10 @@ ul{
 .entry .title{
     border-bottom:1px solid #e4e4e4;
     text-align: left;
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 21px;
+    font-weight: bold;
     height:25px;
     line-height:25px;
-    margin:0px 20px;
     padding:10px 0px;
     color:#000;
 
@@ -129,7 +148,7 @@ ul{
 
 
 .entry .content{
-    padding: 20px;
+    padding: 20px 0px;
     position: relative;
 }
 
@@ -156,6 +175,7 @@ ul{
     position: relative;
     font-size: 12px;
     color: #999;
+    top:16px;
 }
 
 
@@ -164,10 +184,6 @@ ul{
     position:relative;
     line-height:25px;
     font-size: 15px;
-}
-
-.entry .content img{
-    width:100%;
 }
 
 
@@ -187,7 +203,7 @@ font: normal 12px 微软雅黑,Arial, Helvetice, Verdana, sans-serif;/**/
 line-height:1.7em;
 color:#000;
 -webkit-text-size-adjust:none;
-background:#1a1b1f url(image/bg.gif)  no-repeat left 40px fixed;
+/*background:#1a1b1f url(image/bg.gif)  no-repeat left 40px fixed;*/
 }
 
 .hidden{display:none;}
