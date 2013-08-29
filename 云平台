@@ -1,0 +1,30 @@
+
+
+简单说几个比较：
+appfog 无限个应用共享 2G RAM 每个应用2G空间(多处机房可选，国内应该很多人选新加坡机房)；openshift 最多3应用，每个应用512M内存，1G空间（没机房可选）
+appfog 目前不能持久存储(将来会有)，比如通过wp上传的附件过段时间会消失；openshift有专门的data目录，可以持久保存
+两者都能免费绑定域名(opnshift需要通过命令行实现，appfog可以直接页面上操作)，都支持各种语言（python php java .....）
+但openshif可以ssh远程登录到主机，可以diy自己的应用（比如编译个nginx或者redis之类），几乎相当于是一台vps主机(没有root权限)；这点appfog不行。
+
+
+
+appfog新加坡的ping太高，没法用，还是美国机房比较快一点，openshift也是美国机房。
+
+
+sae可以为微博应用服务，bae可以为百度应用服务。
+
+BAE，速度和SAE确实有点差距，不过BAE每个月的1000条免费短信着实不错。
+
+IaaS Vs. PaaS
+
+openshift相比gae,sae,bae等平台的优势？
+
+                   开源，免费，稳定，权限比较大，可以ssh登录进行管理，支持git..
+
+                   openshift支持的语言，环境和数据库
+
+                                      语言：java,python,ruby,php,perl,nodejs
+
+                                                         服务器，框架:tomcat,jboss,nginx,django,spring,ruby on rails...
+
+                                                                            数据库：mysql,      MongoDB ,PostgreSQL

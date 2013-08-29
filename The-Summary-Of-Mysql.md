@@ -1,3 +1,4 @@
+Date: 2013-05-21
 Tags: Linux Mac Mysql
 
 Title:The Summary Of Mysql
@@ -198,6 +199,8 @@ MyISAM：不支持事务和并发。表结构存在.frm文件中，.myd存储数
 
 在表中增加字段：alter table 表名 add 字段 类型 其他; 
                 alter table User add test int(4) default '0'
+                
+在某个范围查询：select * from user where uid between 2 and 5
 
 ##索引
 Mysql中所有数据类型都可以被索引。[\[查看更多\]](../../../../2012/12/05/Mysql索引的使用/ "Mysql索引的使用").

@@ -263,9 +263,56 @@ Service是一个生命周期长且没有用户界面的程序。
 
 安卓生成屏幕有3种方式：xml配置生成；通过用户界面接口生成；直接用代码生成。
 
+##gravity与layout_gravity的区别
 
+android:gravity用于设置View中内容相对于View组件的对齐方式，而android:layout_gravity用于设置View组件相对于Container的对齐方式。
 
+这两个属性可选的值有：top、bottom、left、right、center_vertical、fill_vertical、center_horizontal、fill_horizontal、center、fill、clip_vertical。
 
+而且这些属性是可以多选的，用“|”分开。
+
+在java代码中如何设置？
+
+方式一：
+
+    Button button  = new Button(this);  
+    button.setText("One");  
+    LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);  
+    //此处相当于布局文件中的Android:layout_gravity属性  
+    lp.gravity = Gravity.RIGHT;  
+    button.setLayoutParams(lp);  
+    //此处相当于布局文件中的Android：gravity属性  
+    button.setGravity(Gravity.CENTER);  
+      
+    LinearLayout linear = new LinearLayout(this);  
+    //注意，对于LinearLayout布局来说，设置横向还是纵向是必须的！否则就看不到效果了。  
+    linear.setOrientation(LinearLayout.VERTICAL);  
+    linear.addView(button);  
+    setContentView(linear);  
+
+方式二：
+
+    Button button  = new Button(this);  
+    button.setText("One");  
+    //此处相当于布局文件中的Android：gravity属性  
+    button.setGravity(Gravity.CENTER);  
+      
+    LinearLayout linear = new LinearLayout(this);  
+    //注意，对于LinearLayout布局来说，设置横向还是纵向是必须的！否则就看不到效果了。  
+    linear.setOrientation(LinearLayout.VERTICAL);  
+      
+    LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);  
+    //此处相当于布局文件中的Android:layout_gravity属性  
+    lp.gravity = Gravity.RIGHT;  
+      
+    linear.addView(button, lp);  
+    setContentView(linear);  
+
+另外，要设置在RelativeLayout中的位置时使用addRule方法，如下：
+
+    params = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);  
+        params.addRule(RelativeLayout.CENTER_IN_PARENT);  
+        mContainer.addView(progress,params);  
 
 
 
