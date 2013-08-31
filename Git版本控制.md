@@ -151,3 +151,37 @@ git commit -v:可以将修改差异的每一行都包含到注释中来。
 ##跳过使用暂存区域
 
     git commit -m -a
+
+##移除文件
+
+1、从已跟踪文件清单中（暂存区域）移除，并连带从工作目录中删除指定文件：git rm
+
+2、单独只执行命令rm，提交时仍旧需要执行git rm
+
+3、修改后未git add放入暂存，删除会出现以下提示：
+    
+    git rm test
+    error: 'test' has local modifications
+    (use --cached to keep the file, or -f to force removal)
+
+4、修改后已git add放入暂存，删除会出现以下提示：
+    
+    git rm test
+    error: 'test' has changes staged in the index
+    (use --cached to keep the file, or -f to force removal)
+
+5、如果删除之前修改过并且已经放到暂存区域的话，必须要用强制删除选项 -f，以防误删除文件后丢失修改的内容。
+
+6、如果想把文件从Git仓库中删除（亦即从暂存区域移除），但仍然希望保留在当前工作目录中。换句话说，仅是从跟踪清单中删除。用--cached选项即可。
+
+    git rm --cached test.txt
+
+7、glob模式，git有自己的文件模式扩展匹配方式，操作时会以递归方式匹配：
+    
+    #删除所有/log目录下扩展名为.log的文件
+    git rm log/\*.log
+
+    #递归删除当前目录及其子目录所有~结尾的文件
+    git rm \*~
+
+
