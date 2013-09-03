@@ -14,4 +14,16 @@ Tags: Linux
 
 当给文件添加执行权限'chmod a+x test.py'，在命令行直接通过指定文件的位置'./test.py'执行脚本时，第一行必须添加'/usr/bin/python'，我们用'./'来指示程序位于当前目录。
 
+把文件shiyan.c的所有者改为wang。 
+    
+    $ chown wang shiyan.c 
+
+把目录/his及其下的所有文件和子目录的属主改成wang，属组改成users。 
+    
+    $ chown -R wang.users /his 
+    
+改变/opt/local /book/及其子目录下的所有文件的属组为book。
+
+    $ chgrp -R book /opt/local /book 
+
 

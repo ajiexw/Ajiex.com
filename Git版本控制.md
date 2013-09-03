@@ -185,3 +185,8 @@ git commit -v:可以将修改差异的每一行都包含到注释中来。
     git rm \*~
 
 
+##用git archive来打包发布软件
+
+1）git archive -o foo.zip — 把当前最新的版本打包成foo.zip
+2) git archive -o foo.zip 4d84321a388fa3e55cfee38d61f5fd4e21741bf8 — 把指定版本打包成foo.zip
+
