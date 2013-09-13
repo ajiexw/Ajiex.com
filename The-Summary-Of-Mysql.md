@@ -202,6 +202,26 @@ MyISAM：不支持事务和并发。表结构存在.frm文件中，.myd存储数
                 
 在某个范围查询：select * from user where uid between 2 and 5
 
+##mysql查询今天、昨天、7天、近30天、本月、上一月数据
+
+    #今天
+    select * from 表名 where to_days(时间字段名) = to_days(now());
+
+    #昨天
+    SELECT * FROM 表名 WHERE TO_DAYS( NOW( ) ) – TO_DAYS( 时间字段名) <= 1
+
+    #7天
+    SELECT * FROM 表名 where DATE_SUB(CURDATE(), INTERVAL 7 DAY) <= date(时间字段名)
+
+    #近30天
+    SELECT * FROM 表名 where DATE_SUB(CURDATE(), INTERVAL 30 DAY) <= date(时间字段名)
+
+    #本月
+    SELECT * FROM 表名 WHERE DATE_FORMAT( 时间字段名, ‘%Y%m’ ) = DATE_FORMAT( CURDATE( ) , ‘%Y%m’ )
+
+    #上一月
+    SELECT * FROM 表名 WHERE PERIOD_DIFF( date_format( now( ) , ‘%Y%m’ ) , date_format( 时间字段名, ‘%Y%m’ ) ) =1
+
 ##索引
 Mysql中所有数据类型都可以被索引。[\[查看更多\]](../../../../2012/12/05/Mysql索引的使用/ "Mysql索引的使用").
 
@@ -643,3 +663,6 @@ root用户密码丢失的解决办法
 
 sudo /Library/StartupItems/MySQLCOM/MySQLCOM [start|stop|restart]
 
+##官方文档
+
+[http://dev.mysql.com/doc/refman/5.1/zh/index.html](http://dev.mysql.com/doc/refman/5.1/zh/index.html)
