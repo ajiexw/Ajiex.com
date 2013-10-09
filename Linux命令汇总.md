@@ -27,3 +27,8 @@ Tags: Linux
     $ chgrp -R book /opt/local /book 
 
 
+修改组用户权限
+
+    chmod -R g+rwx *
+
+
