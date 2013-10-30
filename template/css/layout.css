@@ -2,26 +2,36 @@
 
 ul{
     margin:0px;
-    padding:5px 0px 5px 38px; 
+    padding:5px 0px 5px 20px; 
     list-style:none;
 }
 
 ul li {
-    line-height:20px;
+    line-height:25px;
 }
 
+pre {
+    border: 1px solid #BBB;
+    background:none;
+}
+
+#footer {
+    width: 900px;
+}
 
 .container{ 
     position:relative;
     /*width:800px;*/
     margin:0 auto;
+    background: url("image/bg_0.jpg") no-repeat top left;
 }
 
 
 .wrap{
-    position:relative;
-    padding:16px;
-    /*background:url(image/gray.png);*/
+    position: relative;
+    width: 795px;
+    margin: 20px 75px;
+    border-top: 1px solid #666;
 }
 
 .tags_nav {
@@ -41,9 +51,8 @@ ul li {
 
 .archive{
     position:relative;
-    padding:30px;
+    padding:0px;
     list-style:none;
-    background: #fff;
     font-size:12px;
     margin:0px;
     padding-top:15px;
@@ -70,8 +79,10 @@ ul li {
 }
 
 .site{
-    position:relative;
-    margin: 35px 0 25px 0;
+    position: relative;
+    padding: 80px 20px 0px 0px;
+    text-align: right;
+    width: 870px;
 }
 
 .site .nav { 
@@ -108,9 +119,10 @@ ul li {
 }
 
 .site h1 a{
-    color:#bbb;
-    font-size: 28px;
-    height:40px;
+    color: #369;
+    font-size: 20px;
+    height: 40px;
+    font-weight: bold;
 }
 
 
@@ -120,13 +132,11 @@ ul li {
     margin: 0px;
     padding: 20px;
     position: relative;
-    background-color:#fff;
 }
 
 
 
 .entry .title{
-    border-bottom:1px solid #e4e4e4;
     text-align: left;
     font-size: 21px;
     font-weight: bold;
@@ -175,7 +185,7 @@ ul li {
     position: relative;
     font-size: 12px;
     color: #999;
-    top:16px;
+    top:12px;
 }
 
 
@@ -203,7 +213,7 @@ font: normal 12px 微软雅黑,Arial, Helvetice, Verdana, sans-serif;/**/
 line-height:1.7em;
 color:#000;
 -webkit-text-size-adjust:none;
-/*background:#1a1b1f url(image/bg.gif)  no-repeat left 40px fixed;*/
+background: #28557E url(image/bg_1.jpg) repeat-y left;
 }
 
 .hidden{display:none;}

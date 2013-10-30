@@ -94,6 +94,21 @@ Ubuntu开机后仍无法上网，ifconfig发现第二块网卡默认没有启动
 
 SSH登录提示“port 22 connection refused”的原因为ssh服务端没有开启。
 
+##苹果升级Mavericks后'丢失的vbox-vboxnet0'bug
+
+    sudo /Library/StartupItems/VirtualBox/VirtualBox restart
+
+    打开虚拟机偏好设置，点击'网络'：
+
+    ![网络](http://ww3.sinaimg.cn/large/68796df6jw1ea310t91q8j20dw09wwfh.jpg)
+
+参考：
+
+[https://github.com/mitchellh/vagrant/issues/1671](https://github.com/mitchellh/vagrant/issues/1671)
+
+[http://blog.csdn.net/dongjideyu/article/details/8822263](http://blog.csdn.net/dongjideyu/article/details/8822263)
+
+
 ##参考
 
 [http://vb2005xu.iteye.com/blog/1733809](http://vb2005xu.iteye.com/blog/1733809)

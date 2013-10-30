@@ -6,25 +6,25 @@
     <title>{% block title %} {{site.title}} {% endblock %}</title>
 	<link href="http://resource.farbox.com/css/basic.css?version={{resource_version}}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/t/css/layout.css?v=detail-devil">
-    <link rel="favicon icon" type="image/png" href="/img/tt.png" />
+    <link rel="favicon icon" type="image/png" href="/img/t2.png" />
 </head>
-<body class="container">
-    <div class="site hidden">
-        <ul class="nav" style="display:none;">
-            <li><a href="/archive?use=tags">标签</a></li>
-            <li><a href="/archive">存档</a></li>
-        </ul>
-        <h1><a href="/">{{ site.title or 'THIS IS MY SITE'}}</a></h1>
+<body>
+    <div class="container">
+        <div class="site">
+            <ul class="nav" style="display:none;">
+                <li><a href="/archive?use=tags">标签</a></li>
+                <li><a href="/archive">存档</a></li>
+            </ul>
+            <h1><a href="/">{{ site.title or 'THIS IS MY SITE'}}</a></h1>
+        </div>
+
+        {% block content %}
+
+        {% endblock %}
+
+        {% include 'include/footer.html' %}
+
     </div>
-
-
-{% block content %}
-
-{% endblock %}
-
-
-{% include 'include/footer.html' %}
-
 </body>
 </html>
 
