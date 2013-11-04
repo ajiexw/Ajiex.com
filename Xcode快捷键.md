@@ -15,6 +15,8 @@ command + o：打开
 
 Command + shift + o 快速打开
 
+option + 点击导航区域内的文件：在助理编辑器打开
+
 ##关闭
 
 command + w：关闭窗口
@@ -130,5 +132,7 @@ command + r：运行
 
 command + .：停止
 
+##菜单
 
+command + , ：偏好设置Preferences
 
