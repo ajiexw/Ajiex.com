@@ -1,5 +1,5 @@
 Date:2013-08-01 19:45
-Tags: Python Webpy
+Tags: Python
 
 webpy中，使用web.input()方法可以返回一个web.storage对象(类似字典)，内容为从url(GET)或http header(POST)获取的变量，web.Storage对象可以直接使用'i.id'方式获取变量，字典类型需要使用i['id']。
 

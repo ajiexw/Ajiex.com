@@ -1,5 +1,5 @@
 Date:2013-07-31 
-Tags: Python Lib
+Tags: Python
 
 在python中可以用urllib方便的实现图片和flash下载：
 

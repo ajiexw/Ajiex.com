@@ -1,5 +1,5 @@
 Date: 2013-11-04 19:57
-Tags: vim
+Tags: Linux
 
 参考：http://yang3wei.github.io/blog/2013/01/29/nerdtree-kuai-jie-jian-ji-lu/
 

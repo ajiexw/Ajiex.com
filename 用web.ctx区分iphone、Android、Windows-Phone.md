@@ -1,4 +1,4 @@
-Tags: Python Webpy
+Tags: Python
 
 webpy中的web.ctx保存每个HTTP请求的特定信息，比如客户端环境变量。
 

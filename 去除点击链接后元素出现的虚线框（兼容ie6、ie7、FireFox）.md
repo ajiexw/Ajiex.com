@@ -1,4 +1,4 @@
-Tags: IE6
+Tags: Fe
 
 ##IE6、IE7
 

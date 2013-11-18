@@ -1,4 +1,4 @@
-Tags: IE6
+Tags: Fe
 
 在IE6下，当父元素的子元素的样式拥有position:relative属性时，父元素的overflow:hidden属性就会失效。
 

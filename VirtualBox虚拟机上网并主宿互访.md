@@ -1,5 +1,5 @@
 Date:2013-08-25
-Tags:Linux SSH
+Tags:Linux
 
 VirtualBox是一款x86虚拟机软件。原由德国innotek公司开发，2008年Sun收购了Innotek，而Sun于2010年被Oracle收购，2010年1月21日改 名成Oracle VM VirtualBox。VirtualBox 可在 Linux、Windows、Mac主机中运行，并支持在其中安装 Windows (NT 4.0、2000、XP、Server 2003、Vista)、DOS/Windows 3.x、Linux (2.4 和 2.6)、OpenBSD 等系列的客户操作系统。
 

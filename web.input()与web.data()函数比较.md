@@ -1,5 +1,5 @@
 Date: 2013-07-26 11:55 
-Tags: Python Webpy
+Tags: Python
 
 web.input()与web.data()是web.py模块中的两个函数，都用来获取http请求包中的信息，但是获取的信息不同。
 

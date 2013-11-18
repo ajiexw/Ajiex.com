@@ -1,6 +1,5 @@
 Date:2013-11-04 20:09
-
-Tags: vim
+Tags: Linux
 
 Command-T 是一款很不错的 Vim 插件，该插件允许你在 Vim 中快速导航文件，以用于后续的编辑处理。
 

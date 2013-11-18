@@ -1,4 +1,4 @@
-Tags: Linux Nginx
+Tags: Linux
 
 执行sudo nginx -s reload后出现：    
     

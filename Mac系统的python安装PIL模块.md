@@ -1,4 +1,4 @@
-Tags: Mac Python Lib
+Tags: Mac Python
 
 [来源：python安装Image模块](http://jordy.easymorse.com/?p=760)
 

@@ -1,5 +1,5 @@
 Date:2013-08-05 
-Tags: Linux Vim
+Tags: Linux
 
 几种模式：普通模式、编辑模式、命令模式。
 

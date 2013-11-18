@@ -1,4 +1,4 @@
-Tags: Linux SSH
+Tags: Linux
 
 新的机子使用git，提示需要配置ssh密钥。
 

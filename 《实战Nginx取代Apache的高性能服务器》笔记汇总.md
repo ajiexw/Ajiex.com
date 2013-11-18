@@ -1,4 +1,4 @@
-Tags: Nginx
+Tags: Linux
 
 ##常用web服务器
 

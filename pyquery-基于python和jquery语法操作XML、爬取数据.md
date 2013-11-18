@@ -1,5 +1,5 @@
 Date:2013-07-31 22:03
-Tags: Python Lib
+Tags: Python
 
 PyQuery是一个类似于jQuery的Python库，也可以说是jQuery在Python上的实现。使用lxml来实现快速的xml和html的操作解析。
 
