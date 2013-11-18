@@ -7,9 +7,6 @@
 {% block content %}
     <div class="wrap">
         <div class="entry">
-            <div class='created'>
-                {{post.date | date("%Y-%m-%d %H:%M")}}
-            </div>
             <div class="title">
                 {{ post.title }}
             </div>
@@ -26,6 +23,9 @@
                 {% for tag in post.tags %}
                     <a href="/tags/{{ tag }}">{{ tag }}</a>
                 {% endfor %}
+                </div>
+                <div class="created">
+                    {{post.date | date("%Y-%m-%d %H:%M")}}
                 </div>
             </div>
         </div>

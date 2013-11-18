@@ -1,4 +1,4 @@
-Tags: Linux Mail
+Tags: Linux
 
     #如果收到的邮件乱码，设置一下信息
     set charset="utf-8"

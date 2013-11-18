@@ -1,5 +1,5 @@
 Date: 2013-07-16 15:36
-Tags: Knowledge
+Tags: Create
 
 人人生而平等--美国独立宣言
 

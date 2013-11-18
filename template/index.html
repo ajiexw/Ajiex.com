@@ -9,7 +9,6 @@
 
 {% block content %}
 
-
     <div class="wrap">
         <ul class="archive">
         {% for year, posts in entries %}
@@ -18,7 +17,7 @@
             {% for post in posts %}
                 <li class="listing-item">
                     <span class="date">{{ post.date | date("%Y-%m-%d") }}</span>
-                    <a href="{{ post.url }}" title="{{ post.title }}" target="_blank">{{ post.title }}</a>
+                    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                 </li>
             {% endfor %}
             </ul>

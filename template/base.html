@@ -11,9 +11,8 @@
 <body>
     <div class="container">
         <div class="site">
-            <ul class="nav" style="display:none;">
+            <ul class="nav">
                 <li><a href="/archive?use=tags">标签</a></li>
-                <li><a href="/archive">存档</a></li>
             </ul>
             <h1><a href="/">{{ site.title or 'THIS IS MY SITE'}}</a></h1>
         </div>
@@ -22,9 +21,10 @@
 
         {% endblock %}
 
-        {% include 'include/footer.html' %}
-
     </div>
+
+    {% include 'include/footer.html' %}
+
 </body>
 </html>
 

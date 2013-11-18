@@ -1,4 +1,4 @@
-Tags: Mac Tool
+Tags: Mac
 
 iterm2是一个更好替代Mac自带终端与iterm的软件.它的一些最应了解的特色功能有:
 http://www.yangzhiping.com/tech/iterm2.html

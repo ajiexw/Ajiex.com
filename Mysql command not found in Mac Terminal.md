@@ -1,4 +1,4 @@
-Tags: Mac Mysql Path
+Tags: Mac Mysql
 
 ##问题：
 

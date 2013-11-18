@@ -1,5 +1,5 @@
 Date: 2013-10-31 16:35
-Tags: Xcode Objective-c
+Tags: Objective-c
 
 ##新建
 

@@ -9,11 +9,17 @@
 
 {% block content %}
 
-
     <div class="wrap">
+
+        <div class="tags_nav">
+        {% for year, posts in entries %}
+        <a class="" href="#{{ year }}">{{ year }}</a>
+        {% endfor %}
+        </div>
+
         <ul class="archive">
         {% for year, posts in entries %}
-            <li class="listing_title hidden">{{ year }}</li>
+            <li class="listing_title" id="{{ year }}">{{ year }}</li>
             <ul class='listing'>
             {% for post in posts %}
                 <li class="listing-item">
