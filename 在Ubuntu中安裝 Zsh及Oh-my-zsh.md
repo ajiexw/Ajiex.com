@@ -26,6 +26,7 @@ Tags: Linux
 
 	which zsh #看是否在/usr/bin/zsh目录下
 	chsh -s /usr/bin/zsh  
+	注销重新登录后生效
 
 看看有什么Plugin可以用
 
