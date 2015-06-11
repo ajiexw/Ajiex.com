@@ -23,6 +23,7 @@ Tags: Linux
 	ZSH_THEME="candy"
 
 修改默认shell
+
 	which zsh #看是否在/usr/bin/zsh目录下
 	chsh -s /usr/bin/zsh  
 
